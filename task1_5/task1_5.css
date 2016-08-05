@@ -1,0 +1,230 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #dedede;
+	min-width: 750px;
+}
+
+/*头部*/
+
+header{
+	width: 100%
+	height: 60px;
+	background-color: #333;
+	vertical-align: center;
+}
+
+header h1{
+	padding-left: 20px;
+	padding-top: 10px;
+	height: 58px;
+	color: white;
+}
+
+header ul{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+header ul li{
+	text-align: center;
+	width: 60px;
+	display: block;
+	float: left;
+	padding: 10px 10px;
+}
+
+header ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+header ul li a:hover{
+	border-bottom: 1px solid red;
+    background: #474747;
+	border-radius: 3px;
+}
+
+/*主体部分*/
+
+article{
+  margin-top: 40px;
+  background-color: #FFF;
+  margin-left: 40px;
+  margin-right: 450px;
+  padding: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 2px #848484;
+}
+
+article h2{
+	padding: 5px 0px;
+}
+
+article h3{
+	padding: 10px 0; 
+	color: #808080;
+}
+
+article a{
+	color: blue;
+}
+
+article a:hover{
+	color: red;
+}
+
+.author,.time{
+	color: #808080;
+	line-height: 30px;
+	font-size: 12px;
+}
+
+article p{
+	text-indent: 2em;
+	line-height: 25px;
+}
+
+article img{
+	padding: 15px 0;
+}
+
+article ul li{
+	list-style-type: none;
+	font-size: 14px;
+}
+
+.pic{
+	overflow: auto;
+}
+
+article dl dd{
+	width: 120px;
+	border: 1px solid #ccc;
+	margin: 15px;
+	float: left;
+}
+
+article dl dd span{
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	margin: 5px;
+}
+
+article dl dd img{
+	display: block;
+	width: 110px;
+	padding: 5px;
+}
+
+article ol{
+	margin: 10px 40px;
+	line-height: 30px;
+}
+
+article table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+article table tr th{
+	color: white;
+	background:#333;
+	text-align: left;
+	padding: 3px;
+}
+
+article table tr td{
+	border: 1px solid #ccc;
+}
+
+article table .buttontable{
+	background: #ccc;
+}
+
+article tr{
+	line-height: 24px;
+}
+
+/*侧栏*/
+
+main{
+	overflow: auto;
+}
+
+aside{
+
+  background: #fff;
+  float: right;
+  width: 350px;
+  margin-top: 40px;
+  margin-right: 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 2px #848484;
+}
+
+aside h4{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 3px;
+	border-left: 3px solid #ccc;
+}
+
+aside form div{
+	font-size: 14px;
+	margin: 15px 0px;
+}
+
+aside form .tips{
+	float: left;
+	text-align: right;
+	width: 35%;
+	padding-right: 15px;
+}
+
+aside form div p{
+	margin-left: 35%;
+	padding-left: 15px;
+	font-size: 10px;
+	color: #aaa;
+}
+
+aside textarea{
+	width: 50%;
+	height: 100px;
+}
+
+aside .submitButton{
+	width: 100%;
+	height: 34px;
+	border-radius: 10px;
+	color: white;
+	background: #128fdc;
+	font-size: 19px;
+	border: none;
+}
+
+aside .submitButton:hover{
+    background: #0063dc;
+}
+
+footer{
+	width: 100%;
+	height: 50px;
+	background: black;
+	text-align:center;
+	color: white;
+	line-height: 20px;
+	font-size: 12px;
+}
+
+footer p{
+	padding:15px 0;
+}

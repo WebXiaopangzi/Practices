@@ -1,0 +1,44 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+#container{
+	background: #eee !important;
+	margin:20px;
+	/*min-width: calc(200px + 200px + 120px + 80px);*/
+	overflow: auto;
+}
+
+#container,#left,#middle,#right{
+	background: white;
+	border: 1px solid #999;
+	padding:20px;
+}
+
+#left{
+	width: 200px;
+	float: left;
+}
+
+#left img{
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+#middle{
+	margin:0 140px 0 220px;
+}
+
+#right{
+	float: right;
+	width: 120px;
+	height: auto;
+}
+
+#right img{
+	width: 80px;
+	height: 80px;	
+}
