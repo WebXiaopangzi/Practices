@@ -76,7 +76,7 @@ i.account_info{background: url(img/user_info.png) no-repeat center;}
 select::-ms-expand{display: none;}
 select{/* Chrome */-webkit-appearance: none;  Firefox -moz-appearance: none;text-indent: 0.01px;text-overflow: ' '; /* space */}
 
-.price_info{width: 888px;margin-top: 20px;margin-left: 60px;margin-bottom: 20px;}
+.price_info{width: 888px;margin-top: 20px;margin-left: 60px;margin-bottom: 20px;overflow: auto;}
 
 .button_l,.button_r{float: left;width: 29px;height: 65px;margin-right: 4px;background: #fff;cursor: pointer;outline: none;}
 .button_l:hover,.button_r:hover{background: #ddd;}
@@ -91,6 +91,85 @@ select{/* Chrome */-webkit-appearance: none;  Firefox -moz-appearance: none;text
 .history{float: left;width: 136px;height: 65px;background: #fff;text-align: center;}
 .history a{display: block;font-size:14px;color:black;text-decoration: none;background: url(img/history.png) no-repeat 18px 17px;line-height: 65px;padding-left: 30px;}
 
+
+.volumn_info{
+	clear: both;
+	width: 888px;
+	margin-left: 60px;
+	overflow: auto;
+}
+
+.volumn_info h5{
+	font-size: 14px;
+	line-height: 24px;
+}
+
+
+.volumn_list ul{
+	list-style: none;
+	float: left;
+}
+
+.v1,.v2,.v3{
+	margin-right: 29px;
+}
+
+.volumn_list ul li{
+	width: 195px;
+	height: 60px;
+	float: left;
+	position: relative;
+	background: #fff;
+	border: 1px solid #cacbcb;
+	border-left: 4px solid;
+}
+
+.volumn_list li:nth-child(1){
+	border-left: 4px solid #43b29d;
+}
+.volumn_list li:nth-child(2){
+	border-left: 4px solid #388ac1;
+}
+.volumn_list li:nth-child(3){
+	border-left: 4px solid #d04b36;
+}
+.volumn_list li:nth-child(4){
+	border-left: 4px solid #e2cd46;
+}
+
+.volumn_list span{
+	position: absolute;
+	width: 60px;
+	height: 47px;
+	right: 10px;
+	top: 7px;
+}
+
+.v1 span{
+	background: #43b29d;
+}
+.v2 span{
+	background: #388ac1;
+}
+.v3 span{
+	background: #d04b36;
+}
+.v4 span{
+	background: #e2cd46;
+}
+
+.volumn_num{
+	font-size: 14px;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.volumn_des{
+	font-size: 14px;
+	margin-left: 10px;
+	color: #aaa;
+	margin-top: 8px;
+}
 
 
 
