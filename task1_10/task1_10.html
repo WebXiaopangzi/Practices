@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task1_10_flex</title>
+
+	<style>
+		html,body{
+			margin: 0;
+			padding:0;
+		}
+
+		.container{
+			display: flex;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+    		display: flex;
+			width: 100%;
+			background: blue;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-items: center;
+			color: #fff;	
+		}
+
+		.container div{
+			width: 150px;
+			background: #f00;
+			margin:10px 0;
+		}
+
+		.rec1{
+			height: 120px;
+		}
+
+		.rec2{
+			height: 100px;
+		}
+
+		.rec3{
+			height: 40px;
+		}
+
+		.rec4{
+			height: 200px;
+			background: #0f0;
+		}
+
+		@media (max-width: 640px) {
+			.rec4{
+       			 -webkit-order: -1;
+            	-ms-flex-order: -1;
+            	order: -1;
+			}
+			.container{
+				align-items: flex-start;
+			}
+			
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="container">
+	<div class="rec1">1</div>
+	<div class="rec2">2</div>
+	<div class="rec3">3</div>
+	<div class="rec4">4</div>
+</div>
+	
+</body>
+</html>
