@@ -110,24 +110,68 @@ window.onload = function(){
 
 	function selectionSort(){
 		var clock;
-		var count=0,i=0;
-		console.log(queue.str);
-		colck = setInterval(function(){
-			if(count>= queue.str.length){
+		var count=0,i=0,j=0;
+
+		//冒泡排序，有动画
+		// colck = setInterval(function(){
+		// 	if(count>= queue.str.length){
+		// 		clearInterval(clock);
+		// 	}
+		// 	if(i == queue.str.length-1-count){
+		// 		i=0;
+		// 		count++;
+		// 	}
+		// 	if(queue.str[i] > queue.str[i+1]){
+		// 		var temp = queue.str[i];
+		// 		queue.str[i] = queue.str[i+1];
+		// 		queue.str[i+1] = temp;
+		// 		queue.paint();
+		// 	}
+		// 	i++;
+		// },100);
+
+		//选择排序，有动画
+		clock = setInterval(function(){
+			if(i>=queue.str.length){
 				clearInterval(clock);
 			}
-			if(i == queue.str.length-1-count){
-				i=0;
-				i++;
-			}
-			if(queue.str[i] > queue.str[i+1]){
+			if(i<queue.str.length-1){
+				minIndex=i;
+				minValue=queue.str[i];
+				for(j=i+1;j<queue.str.length;j++){
+					if (queue.str[j]<minValue) {
+						minIndex = j;
+						minValue = queue.str[j];
+					}
+				}
 				var temp = queue.str[i];
-				queue.str[i] = queue.str[i+1];
-				queue.str[i+1] = temp;
+				queue.str[i] = minValue;
+				queue.str[minIndex] = temp;
+				i++;
 				queue.paint();
 			}
-			i++;
-		},100);
+		},50);
+
+
+
+			// 选择排序，无动画
+			// for(i=0;i<queue.str.length-1;i++){
+			// 	minIndex=i;
+			// 	minValue=queue.str[i];
+			// 	for(j=i+1;j<queue.str.length;j++){
+			// 		if (queue.str[j]<minValue) {
+			// 			minIndex=j;
+			// 			minValue=queue.str[j];
+			// 		}
+			// 	}
+			// 	var temp=queue.str[i];
+			// 	queue.str[i] = minValue;
+			// 	queue.str[minIndex] = temp;
+			// }
+
+			// console.log(queue.str);
+			// queue.paint();
+	
 	}
 
 	//使onclick事件指向一个新的闭包对象，https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures#Creating_closures_in_loops_A_common_mistake
