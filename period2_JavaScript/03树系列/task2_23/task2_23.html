@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task2_23</title>
+	<style>
+	body{
+		margin: 0;
+		padding: 10px 0 0 0;
+	}
+	#root{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: stretch;
+		height: 400px;
+	}
+	#root > .child{
+		border: 1px solid black;
+	}
+	.child{
+		display: flex;
+		flex-grow: 1;
+		border: 1px solid red;
+		margin: 30px;
+		width: auto;
+		background-color: #fff;
+		transition: background-color 0.5s ease;
+	}
+	.buttons{
+		margin: 15px auto;
+		display: flex;
+		justify-content: center;
+	}
+	#focus{
+		background-color: pink;
+	}
+	#hightlight{
+		background-color: yellow;
+	}
+	#searchResult{
+		display: inline-block;
+		margin: 0;
+	}
+	</style>
+</head>
+<body>
+<div class="buttons">
+<button id="preOrder">前序遍历</button>
+<button id="postOrder">后序遍历</button>
+<input type="text" id="searchText">
+<button id="preSearch">前序搜索</button>
+<button id="postOrder">后序搜索</button>
+</div>
+<p id="searchResult"> </p>
+
+<div id="root"></div>
+	
+	<script type="text/javascript" src="task2_23.js"></script>
+</body>
+</html>
