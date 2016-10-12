@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task2_24</title>
+	<style>
+	body{
+		margin: 0;
+		padding: 20px 0 0 0;
+	}
+
+	[class*='level_']{
+		border: 1px solid #c06665;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background: #fff;
+		padding: 0 5px;
+		margin: 0 5px;
+	}
+
+	.level_1{
+		height: 150px;
+	}
+	.level_2{
+		height: 120px;
+	}
+	.level_3{
+		height: 90px;
+	}
+	.level_4{
+		height: 60px;
+	}
+	.level_5{
+		height: 30px;
+	}
+
+	#boxContainer,
+	#traverseContainer,
+	#searchContainer,
+	#insertDelete{
+		display: flex;
+		justify-content: center;
+		margin-top: 30px;
+	}
+
+	input{
+		margin: 0 5px;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="boxContainer">
+			<div class="level_1" id="root">Root
+				<div class="level_2">2
+					<div class="level_3">3
+						<div class="level_4">4</div>
+						<div class="level_4">4</div>
+						<div class="level_4">4</div>
+						<div class="level_4">4</div>
+					</div>
+					<div class="level_3">3</div>
+					<div class="level_3">3
+						<div class="level_4">4</div>
+						<div class="level_4">4</div>
+					</div>
+				</div>
+				<div class="level_2">2
+					<div class="level_3">3
+						<div class="level_4">4</div>
+						<div class="level_4">4</div>
+						<div class="level_4">4</div>
+					</div>
+					<div class="level_3">3
+						<div class="level_4">4
+							<div class="level_5">5</div>
+						</div>
+						<div class="level_4">4</div>
+					</div>
+				</div>
+				<div class="level_2">2</div>
+			</div>
+		</div>
+
+		<div id="insertDelete">
+			<input type="button" id="deleteBtn" value="删除选中节点及所有子节点">
+			<br>
+			<input type="text" id="insertTxt" placeholder="需添加的内容">
+			<input type="button" id="insertBtn" value="在选中节点下增加子节点">
+		</div>
+
+		<div id="traverseContainer">
+			<input type="button" id="preOrder" value="前序遍历">
+			<input type="button" id="postOrder" value="后序遍历">
+		</div>
+
+
+		<div id="searchContainer">
+			<input type="text" id="searchTxt" placeholder="查询内容">
+			<input type="button" id="searchBtn" value="开始查询">
+		</div>
+	</div>
+
+	<script src="task2_24.js"></script>
+</body>
+</html>
