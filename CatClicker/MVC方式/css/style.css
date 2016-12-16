@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+}
+#cat-menu{
+    width: 20%;
+}
+#cat-list {
+    list-style:none;
+    font-size: 30px;
+    cursor: pointer;
+}
+#cat-list li {
+    padding: 20px;
+}
+#cat-list li:hover {
+    background-color: #ccc;
+}
+#cat {
+    width: 50%;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+#cat-count {
+    display: inline-block;
+}
+#cat-img {
+    display: block;
+    margin-top: 20px;
+    width: 640px;
+    height: 426px;
+}
+#info{
+    width: 30%;
+    font-size: 32px;
+    text-align: center;
+}
+#admin{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    margin-top: 200px;
+}

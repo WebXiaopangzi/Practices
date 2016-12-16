@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Clicker</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #container{
+            margin: 20px;
+            display: flex;
+        }
+        #list{
+            width: 100px;
+            background-color: #ccc;
+            padding: 20px;
+            font-size: 24px;
+        }
+        #list li{
+            list-style: none;
+            text-decoration: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        #show{
+            width: 1000px;
+            background: pink;
+            padding: 50px;
+            text-align: center;
+        }
+        #show p{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 48px;
+        }
+        img{
+            width: 640px;
+            height: 426px;
+        }
+    </style>
+
+    <div id="container">
+        <div id="list">
+            <ul>
+                <li>cat1</li>
+                <li>cat2</li>
+                <li>cat3</li>
+                <li>cat4</li>
+            </ul>
+        </div>
+        <div id="show">
+            <img id="catImg" src="cat1.jpg" alt="cat">
+            <p id="counter">0</p>
+        </div>
+    </div>
+
+
+    <script>
+
+    var images = ['cat1.jpg','cat2.jpg','cat3.jpg','cat4.jpg'];
+    var list = document.getElementsByTagName('li');
+    var counter = document.getElementById('counter');
+    var num = [0,0,0,0];
+    var cat = document.getElementById('catImg');
+    var flag = 0;
+    var button = document.getElementsByTagName('button')[0];
+
+
+    for (var i = 0; i < images.length; i++) {
+
+        list[i].addEventListener('click',function(iCopy){
+            return function(){
+                cat.src = 'cat' + (iCopy+1) + '.jpg';
+                counter.innerHTML = num[iCopy];
+                flag = iCopy;
+                // console.log('neibu:'+flag);
+            };
+        }(i),false);
+    }
+
+    cat.addEventListener('click',function(){
+        console.log(flag);
+        num[flag] = num[flag] + 1;
+        // console.log(num[flag]);
+        counter.innerHTML = num[flag];
+    },false);
+
+
+
+    </script>
+</body>
+</html>

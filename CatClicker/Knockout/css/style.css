@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+}
+
+.cat-list {
+    padding: 20px;
+    text-align: center;
+}
+
+.cat-list ul li {
+    padding: 10px;
+    list-style: none;
+    font-size: 24px;
+    cursor: pointer;
+    background: #ccc;
+}
+
+.cat-list ul li:hover {
+    background: #cce;
+}
+
+.cat {
+    text-align: center;
+}
+
+
+.clickCount {
+    display: inline-block;
+}
+
+img {
+    display: block;
+    width: 640px;
+    height: 460px;
+}
+
+.nickNames h3 {
+    display: inline-block;
+}
+
+.nickNames ul {
+    display: inline-block;
+}
+
+.nickNames ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 15px;
+    display: inline-block;
+}
